@@ -1,0 +1,40 @@
+*{
+    color: black;
+}
+
+body{
+    background-color: rgb(230, 155, 180);
+}
+
+ul li[type]{
+    color: rgb(245, 44, 44);
+}
+
+ol li[type]{
+    font-size: 24px;
+}
+
+div p:first-child {
+    font-style: italic;
+}
+
+div p[type]{
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(121, 181, 233);
+}
+
+button{
+    border-radius: 15px;
+    width: 60px;
+    height: 50px;
+    border: 2px solid rgb(136, 165, 190);
+}
+
+button:active {
+    border-radius: 0%;
+    width: 250px;
+    height: 150px;
+}

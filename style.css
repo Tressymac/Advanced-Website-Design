@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(196, 165, 170);
+}
+
+table, th, td {
+    border: 1px solid rgb(61, 41, 48);
+}
+  
+table {
+    width: 100%;
+}
+
+td:hover{
+    background-color: rgb(242, 196, 211);
+}
+
+*{
+    text-decoration: none;
+    color: black;
+}
+
+*:active{
+    color: black;
+    text-decoration: none;
+}
+
+*:visited{
+    color: black;
+    text-decoration: none;
+}

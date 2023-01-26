@@ -1,0 +1,133 @@
+* {
+    font-size: small;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border-radius: 30px;
+}
+
+nav{
+    text-align: center;
+    box-shadow: 6px palevioletred;
+    height: 2.5em;
+    margin-bottom: 2em;
+}
+
+nav a{
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font: bolder;
+    font-size: larger;
+
+}
+
+.wrapper{
+    border: 5px groove pink;
+    width: 90%;
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box{
+    outline: 3px solid plum;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    padding: 2px;
+    position: relative;
+}
+
+.box:hover{
+    background-color: plum;
+}
+
+/* combinator selectors  */
+
+.box h3 {
+    background-color: rgb(242, 221, 224);
+    text-align: center;
+}
+
+/* direct child */
+.box > h3 {
+    outline: 2px dashed rgb(211, 189, 211);
+}
+
+/* adjecent child */
+h4+p{
+    border: 2px solid rgb(205, 179, 231);
+}
+
+/* sibling selector */
+
+h4 ~ p {
+    background-color: rgba(216, 112, 147, 0.605);
+}
+
+/* Attribute selectors */
+article[seasonal] {
+    font-weight: bolder;
+    color: rgb(157, 186, 212);
+}
+
+/* partial string */
+[special-value *= "Tues"]{
+    visibility: hidden;
+}
+
+/* Target paragraphs with attributes of sale and beginning with "en" */
+p[sale ^= "en"]{
+    border: 3px dotted rgb(215, 194, 197);
+}
+
+/* target image elemanets with src attributes ending in png */
+img[src$=".png"]{
+    border: 3px solid rgb(109, 27, 39);
+}
+
+img:not([alt]){
+    outline: 2px solid blueviolet;
+}
+
+/* pseudo-class selectors */
+nav a:link{
+    background-color: pink;
+    color: black;
+}
+
+nav a:visited{
+    color: black;
+}
+
+nav a:focus{
+    background-color: plum;
+}
+
+nav a:hover{
+    background-color: palevioletred;
+}
+
+nav a:active{
+    background-color: rgb(156, 96, 156);
+}
+
+p::first-letter{
+    font-size: larger;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+[sale*="en"]::before{
+    content: ".\02600";
+    font-size: large;
+}
+
