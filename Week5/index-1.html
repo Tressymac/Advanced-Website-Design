@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header style="background-color: azure">
+      <h1>
+        Sample Form
+      </h1>
+    </header>
+
+    <form id="sampleForm" action="#" method="get" name="Testform">
+      
+      <label for="customerName">
+          Customer Name
+          <br>
+          <input
+            type="text"
+            id="customerName"
+            name="customerName"
+            placeholder="first-name last-name"
+            size="25"
+            required
+            minlength="1"
+            maxlength="60"
+            pattern="^[A-Za-z]+\s[A-Za-z]+$"
+          />
+      </label>
+
+        <br>
+        <br>
+
+      <label for="customerEmail">
+          Customer E-Mail
+          <br>
+          <input
+            type="email"
+            id="customerEmail"
+            name="customerEmail"
+            placeholder="xxxxxxxx@xxxxxx.com"
+            size="25"
+            required
+            minlength="1"
+            maxlength="60"
+          />
+      </label>
+
+        <br>
+        <br>
+
+      <label for="customerOrderId">
+          Customer Order Id Number
+          <br>
+          <input
+            type="number"
+            id="customerOrderId"
+            name="customerOrderId"
+            placeholder="-1"
+            size="5"
+            required
+            minlength="1"
+            maxlength="5"
+            min="-1"
+            max="15"
+            step="3"
+          />
+      </label>
+
+        <br>
+        <br>
+
+      <label for="customerBirthday">
+        Enter your birthday for alcohol orders
+        <br>
+        <input
+          type="date"
+          id="customerBirthday"
+          name="customerBirthday"
+          min="1899-12-01"
+          max="2005-12-01"
+        />
+      </label>
+
+      <br>
+      <br>
+
+      <label for="customerDeliveryTime">
+        Requested Delivery Time
+        <br>
+        <input
+          type="time"
+          id="customerDeliveryTime"
+          name="customerDeliveryTime"
+        />
+      </label>
+
+      <br>
+      <br>
+
+      <label for="customerComments">
+        Your comments and notes for delivery
+        <br>
+        <textarea
+          id="customerComments"
+          name="customerComments"
+          placeholder="comments"
+        >
+        </textarea>
+      </label>
+
+      <br>
+      <br>
+
+      
+      <fieldset> 
+
+        <legend>
+          Select the cheese you want to add
+        </legend>
+
+        <input
+          type="checkbox"
+          id="parmesan"
+          name="cheesees"
+          value="parmesan"
+        />
+        <label for="parmesan">
+          Parmesan
+        </label>
+
+        <br>
+
+        <input
+          type="checkbox"
+          id="reggiano"
+          name="cheesees"
+          value="regianno"
+          checked
+        />
+        <label for="reggiano">
+          Reggiano
+        </label>
+
+        <br>
+
+        <input
+          type="checkbox"
+          id="mozarella"
+          name="cheesees"
+          value="mozarella"
+        />
+        <label for="mozarella">
+          Mozarella
+        </label>
+
+      </fieldset>
+
+      <br>
+      <br>
+
+      <br>
+      <br>
+
+      <fieldset>
+        <legend>Choose Pizza size</legend>
+
+        <input
+          type="radio"
+          id="smallOrder"
+          name="cheesees"
+          value="smallOrder"
+        />
+        
+        <label for="smallOrder">
+          Small
+        </label>
+        
+        <br>
+
+        <input
+          type="radio"
+          id="mediumOrder"
+          name="orderSize"
+          value="mediumOrder"
+          checked
+        />
+
+        <label for="mediumOrder">
+          Medium
+        </label>
+
+        <br>
+
+        <input
+          type="radio"
+          id="largeOrder"
+          name="orderSize"
+          value="largeOrder"
+        />
+        
+        <label for="largeOrder">
+          Large
+        </label>
+    </fieldset>
+
+      <br>
+      <br>
+
+    <select
+      id="toppings"
+      name="toppings"
+      size="5"
+      style="width: 250px"
+      multiple
+    >
+
+      <optgroup label="meats - $1 extra">
+        <option value="sausage">
+          Sausage
+        </option>
+        <option value="ham">
+          Ham
+        </option>
+        <option value="pepperoni">
+          Pepperoni
+        </option>
+      </optgroup>
+
+      <optgroup label="veggies - no additional charge">
+        <option value="peppers">
+          Peppers
+        </option>
+        <option value="pineapple">
+          Pineapple
+        </option>
+        <option value="spinach">
+          Spinach
+        </option>
+      </optgroup>
+
+    </select>
+
+    <br>
+    <br>
+
+    <fieldset>
+      <legend>Colourize Your Pizza Box</legend>
+      <label for="boxColour"
+        >Pick Your Colour
+        <input type="color" id="boxColour" name="boxColour" />
+      </label>
+    </fieldset>
+
+    <br>
+    <br>
+
+      <input type="submit" id="process" />
+    </form>
+  </body>
+</html>

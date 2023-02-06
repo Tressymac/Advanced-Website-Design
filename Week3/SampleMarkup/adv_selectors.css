@@ -70,7 +70,7 @@ h4+p{
 /* sibling selector */
 
 h4 ~ p {
-    background-color: rgba(216, 112, 147, 0.605);
+    background-color: rgba(223, 17, 86, 0.605);
 }
 
 /* Attribute selectors */
