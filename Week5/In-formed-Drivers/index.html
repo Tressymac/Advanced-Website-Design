@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <header>
+            <div>
+                <h1>
+                    <img  src="4669.png" style="width: 150px;position: relative;top: 30px;">
+                    1990 Volkswagon beetle
+                </h1>
+            </div>
+            <img src="png" alt="">
+        </header>
+    </nav>
+
+    <div>
+        <form id="sampleForm" action="#" method="get" name="Testform">
+        
+            <label for="customerName">
+                First name
+                <br>
+                <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Name"
+                size="25"
+                required
+                minlength="1"
+                maxlength="60"
+                pattern="^[A-Za-z]"
+                />
+            </label>
+    
+            <br>
+            <br>
+    
+            <label for="customerEmail">
+                Enter E-Mail
+                <br>
+                <input
+                type="email"
+                id="personalEmail"
+                name="personalEmail"
+                placeholder="xxxxxxxx@xxxxxx.com"
+                size="25"
+                required
+                minlength="1"
+                maxlength="60"
+                />
+            </label>
+    
+            <br>
+            <br>
+
+            <label for="license">
+                Enter license number
+                <br>
+                <input
+                type="text"
+                id="licenseNumber"
+                name="licenseNumber"
+                size="15"
+                required
+                minlength="1"
+                maxlength="60"
+                />
+            </label>
+    
+    
+            <br>
+            <br>
+    
+            <label for="customerBirthday">
+            Enter the date the car was purchased
+            <br>
+            <input
+                type="date"
+                id="customerBirthday"
+                name="customerBirthday"
+                min="1899-12-01"
+                max="2005-12-01"
+            />
+            </label>
+    
+            <br>
+            <br>
+    
+            
+            <fieldset> 
+    
+            <legend>
+                Please select your drive options
+            </legend>
+    
+            <input
+                type="checkbox"
+                id="frontWheelDrive"
+                name="frontWheelDrive"
+                value="frontWheelDrive"
+            />
+            <label for="frontWheelDrive">
+                Front-wheel drive
+            </label>
+    
+            <br>
+
+            <input
+            type="checkbox"
+            id="rearwheeldrive"
+            name="rearwheeldrive"
+            value="rearwheeldrive"
+            />
+            <label for="rearwheeldrive">
+                Rear-wheel drive
+            </label>
+
+            <br>
+    
+            <input
+                type="checkbox"
+                id="fourWheelDrive"
+                name="fourWheelDrive"
+                value="fourWheelDrive"
+                checked
+            />
+            <label for="fourWheelDrive">
+                Four-wheel drive
+            </label>
+    
+            <br>
+    
+            <input
+                type="checkbox"
+                id="allWheelDrive"
+                name="allWheelDrive"
+                value="allWheelDrive"
+            />
+            <label for="allWheelDrive">
+                All-wheel drive
+            </label>
+    
+            </fieldset>
+    
+            <br>
+            <br>
+    
+            <br>
+            <br>
+    
+    
+        <select
+            id="manufacturer"
+            name="manufacturer"
+            size="5"
+            style="width: 300px"
+            multiple>
+    
+            <optgroup label="Non-USA Manufacturers">
+            <option value="Honda">
+                Honda Motor Company
+            </option>
+            <option value="Volkswagen">
+                Volkswagen Group
+            </option>
+            <option value="Hyundai">
+                Hyundai Motor Group
+            </option>
+            </optgroup>
+    
+            <optgroup label="USA Manufacturers">
+            <option value="GM">
+                General Motors
+            </option>
+            <option value="Ford">
+                Ford Motor Company
+            </option>
+            </optgroup>
+    
+        </select>
+    
+        <br>
+        <br>
+
+        <label for="customerComments">
+            Any additional comments
+            <br>
+            <textarea
+                id="customerComments"
+                name="customerComments"
+                placeholder="comments"
+            >
+            </textarea>
+            </label>
+    
+            <br>
+            <br>
+    
+        <fieldset>
+            <legend>Colour of car</legend>
+            <input type="color" id="boxColour" name="boxColour" />
+        </fieldset>
+    
+        <br>
+        <br>
+    
+            <input type="submit" id="process" />
+        </form>
+    </div>
+
+    <footer>
+        <img src="mushroom.avif">
+        <img src="fungi.png">
+    </footer>
+
+</body>
+</html>
