@@ -120,3 +120,21 @@ input[type=text], [type=email], [type=date], select, textarea {
         text-align: center;
     }
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #A65F37; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A65F37; 
+  }
