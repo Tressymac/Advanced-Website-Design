@@ -1,11 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
 body{
     background-color: #A6483F;
+    height: 100%;
 }
 
 *{
     margin: 0px; 
     border: 0px;
-    padding: 0%;  
+    padding: 0px;  
 }
 
 nav{
@@ -15,3 +19,104 @@ nav{
     border: 3px dashed #F27141;
     padding-bottom: 50px;
 }
+
+.formBox{
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    justify-content: center;
+    margin-top: 3%;
+    bottom: 0%;
+}
+
+.mushroomLady{
+    position: relative;
+    width: 350px;
+    /* bottom: 250px; */
+}
+
+.mushroom{
+    position: relative;
+    width: 200px;
+    bottom: 250px;
+    left: 1300px;
+}
+
+h1 {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 5rem;
+  text-shadow: -15px 5px 20px #000000;
+  letter-spacing: 0.02em;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #D93644, 
+    5px 5px 0px #A63856, 
+    10px 10px 0px  #736627, 
+    15px 15px 0px #D97236, 
+    20px 20px 0px #F2836B, 
+    25px 15px 0px #D93644;
+}
+
+input[type=text], [type=email], [type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #BF4E24;
+    border: 1px solid #BF4E24;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label, legend {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: wheat;
+    font-style: italic;
+    font-weight: 400;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  input[type=submit] {
+    background-color: #A65F37;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #58321b;
+  }
+  
+  form {
+    border-radius: 5px;
+    background-color: #8C2C16;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 600px)  {
+    html{
+        height: 100px;
+    }
+
+    .mushroom{
+        display: none;
+    }
+
+    .mushroom{
+        width: 200px;
+        left: 1200px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+  }

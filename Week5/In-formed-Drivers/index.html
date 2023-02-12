@@ -12,16 +12,15 @@
     <nav>
         <header>
             <div>
-                <h1>
-                    <img  src="4669.png" style="width: 150px;position: relative;top: 30px;">
-                    1990 Volkswagon beetle
-                </h1>
+                <div>
+                    <img  src="4669.png" style="width: 150px; position: relative; top: 100px; right: 180px;" alt="Beetle car">
+                    <h1>1970 Volkswagon beetle</h1>
+                </div>
             </div>
-            <img src="png" alt="">
         </header>
     </nav>
 
-    <div>
+    <div class="formBox">
         <form id="sampleForm" action="#" method="get" name="Testform">
         
             <label for="customerName">
@@ -31,6 +30,22 @@
                 type="text"
                 id="firstName"
                 name="firstName"
+                placeholder="Name"
+                size="25"
+                required
+                minlength="1"
+                maxlength="60"
+                pattern="^[A-Za-z]"
+                />
+            </label>
+
+            <label for="customerName">
+                Last name
+                <br>
+                <input
+                type="text"
+                id="lastName"
+                name="lastName"
                 placeholder="Name"
                 size="25"
                 required
@@ -215,11 +230,10 @@
             <input type="submit" id="process" />
         </form>
     </div>
+    <div>
+        <img src="mushroom.avif" alt="Mushroom lady" class="mushroomLady">
+    </div>
 
-    <footer>
-        <img src="mushroom.avif">
-        <img src="fungi.png">
-    </footer>
 
 </body>
 </html>
