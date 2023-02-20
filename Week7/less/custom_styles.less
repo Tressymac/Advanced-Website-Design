@@ -1,0 +1,100 @@
+@header_width: 50%;
+@base_unit: 10px; 
+@header_height: (@base_unit * 5) + 10px;
+@mtVernon_border_color: rgb(122, 86, 71);
+@mtVernon_background_color: #d9ce9a;
+@small_device_width: 750px; 
+
+#headerStyle{
+    width: @header_width;
+    margin-right: auto;
+    margin-left: auto;
+    height: @header_height;
+    border: @base_unit solid @mtVernon_border_color;
+    background-color: @mtVernon_background_color;
+    text-align: center;
+    @media  (max-width: @small_device_width) {
+        width: 95%;
+    }
+}
+
+.bordered{
+    border-left: dotted 0.8 * @base_unit @mtVernon_background_color;
+    border-bottom: solid 2px @mtVernon_border_color;
+    margin: 0.5 * @base_unit;
+}
+
+.nely_block {
+    background-color: lighten(@mtVernon_background_color, 15%);
+    flex: 1 - 50*@base_unit;
+    @media (max-width: @small_device_width) {
+        flex: 0 0 30*@base_unit;
+    }
+}
+
+.neely_word_format {
+    background-color: goldenrod;
+    flex: 0 0 20*@base_unit;
+    height: 120px;
+    text-align: center;
+}
+
+.vertically_offSet{
+    padding-top: 30px;
+}
+
+// Mixins
+#wordOfTheDay{
+    .bordered();
+    .neely_word_format();
+    .vertically_offSet();
+}
+
+#thoughtOfTheDay{
+    .bordered();
+    .neely_word_format();
+    .vertically_offSet();
+    .nely_block();
+    z-index: 99;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+#lessonArea{
+    margin-top: 5px;
+    position: relative;
+    top: @base_unit;
+    height: 30vh;
+    background-color: antiquewhite;
+    color: black;
+    .level{
+        font-size: 16px;
+    }
+    .logo{
+        width: 8*@base_unit;
+        height: 100px;
+        background-image: url("../assets/bucaneer1.png");
+        background-size: contain;
+        background-color: antiquewhite;
+    }
+    h2{
+        .bordered();
+        .level();
+    }
+    h1{
+        .bordered();
+        background-color: @mtVernon_background_color;
+    }
+    @media (max-width: @small_device_width) {
+        width: 95%;
+        h1::after{
+            content: "\1F4F1"
+        }
+    }
+    @media (min-width: @small_device_width) {
+        width: 95%;
+        h1::after{
+            content: "\1F5B3"
+        }
+    }
+}
