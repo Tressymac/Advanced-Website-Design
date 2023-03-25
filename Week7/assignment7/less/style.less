@@ -1,0 +1,79 @@
+@import url(./variables.less);
+@import url(./box.less);
+@import url(./footer.less);
+@import url(./main.less);
+@import url(./nav.less);
+
+body{
+    background-color: @background_color;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    position: @nav_fixed;
+    text-align: @nav_text;
+    width: @nav_width;
+    height: @nav_size;
+    background-color: @footer_color;
+    display: @nav_display;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxCollection{
+    margin-top: @box_margin;
+    display: @nav_display;
+    align-items: center;
+}
+
+.box1{
+    width: @box1_size;
+    height: @box1_size;
+    background-color: @box1_color;
+    border: @border_color;
+    margin-right: @spaceInbetween;
+    border-radius: @border_round;
+}
+
+.box2{
+    width: @box2_size;
+    height: @box2_size;
+    background-color: @box2_color;
+    border: @border_color;
+    margin-right: @spaceInbetween;
+    border-radius: @border_round;
+}
+
+.box3{
+    width: @box3_size;
+    height: @box3_size;
+    background-color: @box3_color;
+    border: @border_color;
+    margin-right: @spaceInbetween;
+    border-radius: @border_round;
+}
+
+.box4{
+    width: @box4_size;
+    height: @box4_size;
+    background-color: @box4_color;
+    border: @border_color;
+    border-radius: @border_round;
+}
+
+footer{
+    background-color: @footer_color;
+    text-align: @nav_text;
+    width: @footer_width;
+    height: @footer_size;
+    background-color: @footer_color;
+    display: @footer_display;
+    justify-content: center;
+    align-items: center;
+    margin-top: @footer_margin;
+}
