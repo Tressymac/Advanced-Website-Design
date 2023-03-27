@@ -14,18 +14,17 @@
     .btn-outline-secondary{
         color: white;
     }
+    .btn-outline-primary {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
   </style>
 </head>
 <body>
   <div class="container my-4">
     <h1 class="mb-4" style="margin-left: 45%;">Movie Quiz</h1>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 50%; margin-bottom: 3%; margin-left: 30%;">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="width: 50%; margin-bottom: 3%; margin-left: 30%;">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="images/ghost.jpg" alt="First slide">
@@ -37,19 +36,12 @@
             <img class="d-block w-100" src="images/streetwise.jpg" alt="Third slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
 
     <form>
       <div class="form-group">
         <label>1. Who directed Streetwise (1984 film)</label>
+        <br>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-outline-secondary">
             <input type="radio" name="question1" id="question1a" value="a"> a) Steven Spielberg
@@ -64,6 +56,7 @@
       </div>
       <div class="form-group">
         <label>2. When was neon genesis evangelion the end of evangelion released</label>
+        <br>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-outline-secondary">
             <input type="radio" name="question2" id="question2a" value="a"> a) 1980
@@ -78,6 +71,7 @@
       </div>
       <div class="form-group">
         <label>3. Which movie won the Best Picture Oscar in 2020?</label>
+        <br>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-outline-secondary">
             <input type="radio" name="question3" id="question3a" value="a"> a) Joker
@@ -92,6 +86,7 @@
       </div>
       <div class="form-group">
         <label>4. Is Fallen Angels the best Wong Kar-wai film?</label>
+        <br>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-outline-secondary">
               <input type="radio" name="question3" id="question3a" value="a"> a) Yes
@@ -103,24 +98,17 @@
       </div>
       <div class="form-group">
         <label>5. What movie comes out this April</label>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    The Super Mario Bros. Movie
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                    John Wick 4
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                    The Pope's Exorcist
-                </label>
-            </div>
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">The Super Mario Bros. Movie</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2">John Wick 4</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3">The Pope's Exorcist</label>
+        </div>
       </div>
       <div class="form-group">
         <label>6. Is A Ghost Story the best film ever? </label>
