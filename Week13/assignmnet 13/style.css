@@ -1,5 +1,6 @@
-.body{
-    background-color: #2A1A40;
+body{
+    background-color: #595780!important;
+    color: #000000;
 }
 
 .bg-dark{
@@ -15,3 +16,44 @@
     font-weight: bolder;
     line-height: 1.2;
 }
+
+.funFact{
+    background-color: #444177;
+    border: #000000 solid 1px;
+    margin-bottom: 1%;
+}
+
+#characters{
+    margin-top: 4%;
+}
+
+#episodes{
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.modal-content{
+    background-color: #856497;
+    border: 1px solid rgb(0 0 0 / 20%);
+}
+
+.modal-header {
+    border-bottom: 1px solid #060606;
+}
+
+.modal-footer {
+    border-top: 1px solid #000000;
+}
+
+.card {
+    word-wrap: break-word;
+    background-color: #aa86af;
+    border-radius: 15px;
+    border-bottom: solid 5px #1e1d35;
+    border-right: solid 7px #1e1d35;
+}
+
+.card:hover{
+    transform: scale(105%);
+}
+
