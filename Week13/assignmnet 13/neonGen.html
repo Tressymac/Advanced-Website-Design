@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Neon Genesis Evangelion Web App</title>
+    <title>Neon Genesis Evangelion Fan App</title>
+    <link rel="icon" href="images/crew.jpg">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
@@ -30,7 +32,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Neon Genesis Evangelion</a>
+        <a class="navbar-brand" href="#">Neon Genesis Evangelion Fan Page</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -104,7 +106,10 @@
                 <span class="sr-only">Next</span>
                 </a>
             </div>
-            <a href="#about" class="btn btn-outline-light btn-lg mt-4">Learn More</a>
+            <!-- <a href="#about" class="btn btn-outline-light btn-lg mt-4">Learn More</a> -->
+            <a href="https://www.youtube.com/watch?v=rHIvs0Q-uKI&t=34s&ab_channel=%D6%B4" type="button" class="btn btn-outline-light btn-lg mt-4" data-toggle="tooltip" title="Video essay on The Curse of Evangelion">
+                Learn More
+            </a>
         </div>
     </div>
 
@@ -132,7 +137,6 @@
                     <!-- <button type="button" class="btn btn-outline-dark mt-4" data-bs-toggle="tooltip" data-bs-placement="top" title="In the Neon Genesis Evangelion series, the Angels are portrayed as divine beings who are beyond human comprehension.">
                         fun fact
                     </button> -->
-                    <!-- <button type="button" class="btn btn-primary" data-toggle="tooltip" title="This is a tooltip!">Button</button> -->
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-info funFact" data-toggle="modal" data-target="#funFactModal">
                         Click here for a fun fact!
@@ -213,6 +217,7 @@
         </div>
     </section>
 
+    <!-- Episodes Section -->
     <section id="episodes">
         <div class="container">
             <h2>Episodes</h2>
@@ -252,13 +257,79 @@
         </div>
     </section>
 
+    <!-- accordion quiz -->
+    <div id="quiz" class="accordion">
+        <h2>Characters</h2>
+        <div class="card quiz">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Question 1: What is the name of the organization that combats the Angels in Neon Genesis Evangelion?
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#quiz">
+            <div class="card-body">
+              NERV
+            </div>
+          </div>
+        </div>
+      
+        <div class="card quiz">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Question 2: Who is the main protagonist of Neon Genesis Evangelion?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#quiz">
+            <div class="card-body">
+              Shinji Ikari
+            </div>
+          </div>
+        </div>
+      
+        <div class="card quiz">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Question 3: What is the name of the giant bio-machine piloted by the characters in the show?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#quiz">
+            <div class="card-body">
+              Evangelion
+            </div>
+          </div>
+        </div>
+      
+        <div class="card quiz">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Question 4: Who is the creator and director of Neon Genesis Evangelion?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#quiz">
+            <div class="card-body">
+              Hideaki Anno
+            </div>
+          </div>
+        </div>
+    </div>
+      
+
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="mb-0">Neon Genesis Evangelion Web App</p>
-                    <p class="mb-0"><small>&copy; 2023 </small></p>
+                    <p class="mb-0">Neon Genesis Evangelion Fan Page</p>
+                    <p class="mb-0"><small>&copy; 2023 Tressica Mac</small></p>
                 </div>
                 <div class="col-md-6 text-right">
                     <a href="#">Privacy Policy</a>
