@@ -1,0 +1,17 @@
+.body{
+    background-color: #2A1A40;
+}
+
+.bg-dark{
+    background-color: #1e1d35!important;
+}
+
+.text-white{
+    color: #eceaea!important;
+}
+
+.display-4{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    line-height: 1.2;
+}
