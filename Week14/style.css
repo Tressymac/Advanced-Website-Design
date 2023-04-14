@@ -1,0 +1,33 @@
+.bg-dark {
+    background-color: #6C748C!important;
+}
+
+body{
+    background-color: darkgray;
+}
+
+.card{
+    background-color: #6C748C;
+}
+
+.btn-link{
+    color: #000000;
+}
+
+.btn-link:hover{
+    color: #837e7e;
+}
+
+.text-white{
+    color: #000000!important;
+}
+
+.navbar-dark .navbar-brand{
+    color: #000000!important;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: rgba(0,123,255,.5);
+    border-color: #000000;
+}
